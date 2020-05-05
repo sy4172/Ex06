@@ -33,20 +33,16 @@ public class MainActivity extends AppCompatActivity {
         if (sW.isChecked()) {
             if (tB.isChecked()) {
                 dispalyScreen.setBackgroundResource(R.color.blue);
-                // 1,1
             } else {
                 dispalyScreen.setBackgroundResource(R.color.red);
-                // 1,0
             }
         }
         else{
             if (tB.isChecked()){
                 dispalyScreen.setBackgroundResource(R.color.yellow);
-                   // 0,1
             }
             else{
                 dispalyScreen.setBackgroundResource(R.color.green);
-                // 0,0
             }
         }
     }
