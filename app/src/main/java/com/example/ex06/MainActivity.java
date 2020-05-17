@@ -2,8 +2,6 @@ package com.example.ex06;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -14,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     Switch sW;
     ToggleButton tB;
-    Button start;
     LinearLayout dispalyScreen;
 
     @Override
@@ -25,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
         sW = findViewById(R.id.sW);
         tB = findViewById(R.id.tB);
         dispalyScreen = findViewById(R.id.displayScreen);
-        start = findViewById(R.id.start);
-
     }
 
     public void changeBackground(View view) {
