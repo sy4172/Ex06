@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Switch sW;
     ToggleButton tB;
-    LinearLayout dispalyScreen;
+    LinearLayout displayScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,23 +21,23 @@ public class MainActivity extends AppCompatActivity {
 
         sW = findViewById(R.id.sW);
         tB = findViewById(R.id.tB);
-        dispalyScreen = findViewById(R.id.displayScreen);
+        displayScreen = findViewById(R.id.displayScreen);
     }
 
     public void changeBackground(View view) {
         if (sW.isChecked()) {
             if (tB.isChecked()) {
-                dispalyScreen.setBackgroundResource(R.color.blue);
+                displayScreen.setBackgroundResource(R.color.blue);
             } else {
-                dispalyScreen.setBackgroundResource(R.color.red);
+                displayScreen.setBackgroundResource(R.color.red);
             }
         }
         else{
             if (tB.isChecked()){
-                dispalyScreen.setBackgroundResource(R.color.yellow);
+                displayScreen.setBackgroundResource(R.color.yellow);
             }
             else{
-                dispalyScreen.setBackgroundResource(R.color.green);
+                displayScreen.setBackgroundResource(R.color.green);
             }
         }
     }
